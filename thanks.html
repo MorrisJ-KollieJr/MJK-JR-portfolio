@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .thank-you-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .checkmark {
+      font-size: 60px;
+      color: #00ffad;
+      animation: pop 0.4s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .redirect-msg {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-box">
+    <div class="checkmark">✅</div>
+    <h1>Thank You!</h1>
+    <p>Your message was successfully sent.</p>
+    <p class="redirect-msg">You’ll be redirected to the homepage in a moment...</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://morrisj-kolliejr.github.io/MJK-JR-portfolio/";
+    }, 5000); // Redirect after 5 seconds
+  </script>
+
+</body>
+</html>
